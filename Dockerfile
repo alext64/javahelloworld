@@ -10,6 +10,6 @@ RUN mkdir bin
 
 ENV APP_REL="1.1" SERV_REL="1.1"
 
-RUN javac -d bin src/HelloWorld.java
+RUN javac -d bin src/JavaHelloWorld.java
 
-ENTRYPOINT ["java", "-cp", "bin", "HelloWorld"]
+ENTRYPOINT ["java", "-cp", "bin", "JavaHelloWorld"]
